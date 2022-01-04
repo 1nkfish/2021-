@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../CO-lab-material-CQU-2021/CO-lab-material-CQU-2021/ref_code" --include "../../../../../../../CO-lab-material-CQU/ref_code" --include "../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl" \
+"../../../../lab_4.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../lab_4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/MIPS_Hardware_Design-master/MIPS_Hardware_Design-master/src/ReadData_handle.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/MIPS_Hardware_Design-master/MIPS_Hardware_Design-master/src/WriteData_handle.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/adder.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/alu.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/aludec.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/div.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/eqcmp.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/flopenr.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/flopenrc.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/flopr.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/hazard.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/instdec.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/maindec.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/mux2.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/mux3.v" \
+"../../../../lab_4.srcs/sources_1/new/my_mul.v" \
+"../../../../lab_4.srcs/sources_1/new/mycpu.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/pc.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/regfile.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/signext.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/sl2.v" \
+"../../../../lab_4.srcs/sources_1/imports/hardware proj/hardware-master/hardware/lab_4/rtl/top.v" \
+"../../../../lab_4.srcs/sim_1/imports/lab_4/sim/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

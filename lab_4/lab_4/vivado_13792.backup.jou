@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jan  2 19:34:33 2022
+# Process ID: 13792
+# Current directory: D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3232 D:\hardware proj\hardware-master\hardware-master\lab_4\lab_4\lab_4.xpr
+# Log file: D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/vivado.log
+# Journal file: D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4\vivado.jou
+# Running On: LAPTOP-GLQ1HJSA, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{D:/hardware proj/CO-lab-material-CQU/CO-lab-material-CQU/ref_code/defines.vh}}
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}]
+export_ip_user_files -of_objects [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}}] -directory {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/sim_scripts} -ip_user_files_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files} -ipstatic_source_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+set_property -dict [list CONFIG.Coe_File {D:/hardware proj/CO-lab-material-CQU/CO-lab-material-CQU/test/lab4/funcTest_independent/LogicInstTest/obj/inst_ram.coe}] [get_ips inst_mem]
+close_sim
+generate_target Simulation [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}]
+export_ip_user_files -of_objects [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}}] -directory {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/sim_scripts} -ip_user_files_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files} -ipstatic_source_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/md}} 
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[4]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[3]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[2]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[1]}} 
+restart
+run all
+close_sim
+close_project
+open_project {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{D:/hardware proj/CO-lab-material-CQU-2021/CO-lab-material-CQU-2021/ref_code/defines.vh}}
+update_compile_order -fileset sources_1
+close [ open {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/new/floprc.v} w ]
+add_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/new/floprc.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/new/floprc.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/new/floprc.v}}
+set_property -dict [list CONFIG.Coe_File {D:/hardware proj/CO-lab-material-CQU-2021/CO-lab-material-CQU-2021/test/lab4/funcTest_independent/ShiftInstTest/obj/inst_ram.coe}] [get_ips inst_mem]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+reset_run inst_mem_synth_1
+generate_target Simulation [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}]
+export_ip_user_files -of_objects [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}}] -directory {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/sim_scripts} -ip_user_files_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files} -ipstatic_source_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+generate_target Simulation [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}]
+export_ip_user_files -of_objects [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}}] -directory {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/sim_scripts} -ip_user_files_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files} -ipstatic_source_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+generate_target Simulation [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}]
+export_ip_user_files -of_objects [get_files {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.srcs/sources_1/ip/inst_mem/inst_mem.xci}}] -directory {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/sim_scripts} -ip_user_files_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files} -ipstatic_source_dir {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/modelsim} {questa=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/questa} {riviera=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/riviera} {activehdl=D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/lab_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[5]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[7]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[8]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[16]}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[19]}} 
+restart
+run all
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/dym/rf/rf[2]}} 
+restart
+run all
+save_wave_config {D:/hardware proj/hardware-master/hardware-master/lab_4/lab_4/testbench_behav.wcfg}

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan  4 21:46:55 2022
+# Process ID: 33436
+# Current directory: D:/hardware proj/hardware-master/hardware/lab_4/lab_4/lab_4.runs/blk_mem_gen_0_synth_1
+# Command line: vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file: D:/hardware proj/hardware-master/hardware/lab_4/lab_4/lab_4.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: D:/hardware proj/hardware-master/hardware/lab_4/lab_4/lab_4.runs/blk_mem_gen_0_synth_1\vivado.jou
+# Running On: LAPTOP-GLQ1HJSA, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 17042 MB
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace
